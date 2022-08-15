@@ -11,18 +11,19 @@ wire [2:0] light_highway;
 traffic_light tb(light_highway, light_farm, sensor, clk, rst_n);
 
 initial
+ 
  begin
  clk = 1'b0;
  rst_n = 1'b0;
  sensor = 1'b0;
-
+ 
  end
 
 initial
  begin
- main;
+  main;
  end
-task main;
+ task main;
  fork
  clock_gen;
  reset_gen;
