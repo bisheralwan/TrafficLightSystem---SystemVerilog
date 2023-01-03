@@ -1,6 +1,5 @@
 `timescale 10 ns/ 1 ps
 `define DELAY 1
-module tb_traffic;
 parameter ENDTIME  = 400000;
 reg clk;
 reg rst_n;
